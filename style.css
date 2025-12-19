@@ -56,7 +56,7 @@ main {
 
 
 height: 100vh; /* 画面いっぱい */
-background-image: url('おむらいす.png'); /* ←好きな画像に変更 */
+background-image: url('おむらいす_低解像度.png'); /* ←好きな画像に変更 */
 background-size: cover; /* 画像を全体にフィット */
 background-position: center; /* 中央に配置 */
 background-repeat: no-repeat;
