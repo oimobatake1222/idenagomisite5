@@ -1,0 +1,231 @@
+/* ================================
+   RESET
+================================ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+/* ================================
+   HEADER
+================================ */
+header {
+  background-color: #e5ff00;
+  padding: 1rem;
+  border: 2px dashed #e5ff00;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 180px;
+  height: 80px;
+  background: #D9D9D9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Inter;
+  font-weight: bold;
+  font-size: 1.25rem;
+  color: #000;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  color: #fff;
+}
+
+/* ================================
+   MAIN VISUAL
+================================ */
+main {
+  width: 100%;
+  height: 480px;
+  background-color: #262626;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  font-weight: bold;
+  color: #fff;
+
+
+height: 100vh; /* 画面いっぱい */
+background-image: url('おむらいす.png'); /* ←好きな画像に変更 */
+background-size: cover; /* 画像を全体にフィット */
+background-position: center; /* 中央に配置 */
+background-repeat: no-repeat;
+
+
+}
+
+/* ================================
+   ABOUT
+================================ */
+.About {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 63px;
+  padding: 10px 300px 100px 300px;
+  background: #15ff00;
+  text-align: center;
+}
+
+#aaa {
+  font-family: Futura;
+  font-size: 48px;
+  font-weight: 300;
+  color: #ff00c8;
+  padding: 30px 30px 30px 30px;
+}
+
+.nagomi {
+  font-family: Futura;
+  font-size: 30px;
+  font-weight: 300;
+  color: #ff00aa;
+  text-align: center;
+}
+
+.nagomi img {
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
+  background: #000;
+}
+
+.center-list {
+  list-style: none;           /* デフォルトの・を消す */
+  padding: 0;
+  margin: 0;
+  display: flex;              /* Flexで中央配置 */
+  flex-direction: column;     /* 縦方向に並べる */
+  align-items: center;        /* 水平方向中央 */
+  gap: 10px;                  /* 各行の間隔 */
+}
+
+ul{font-family: Futura;
+  font-size: 32px;
+  font-weight: 300;
+  color: #ff00ea;
+}
+
+/* ================================
+   WORKS
+================================ */
+.works {
+  color: #77ff00;
+  text-align: center;
+  font-family: Futura;
+  font-size: 48px;
+  font-weight: 250;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 63px;
+  padding: 100px 300px 200px 300px;
+  background: #ff00cc;
+}
+
+.ppp {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 80px 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 横3列 */
+  gap: 20px;
+  text-align: center;
+}
+
+/* WORKSタイトル中央 */
+.ppp h2 {
+  grid-column: 1 / -1;       /* グリッド全体で中央に表示 */
+  text-align: center;
+  font-size: 48px;
+  color: #77ff00;
+  margin-bottom: 40px;
+}
+
+/* 背景付きの枠 */
+.ppp a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 220px;             /* 枠の高さを固定 */
+  background-color: #00ff08; /* 背景色 */
+  border-radius: 12px;
+  overflow: hidden;          /* 画像がはみ出ない */
+}
+
+/* 画像サイズはそのまま、縦横比を保つ */
+.ppp img {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+}
+
+/* ================================
+   CONTACT
+================================ */
+.konntakuto {
+  background: #ffd621;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 63px;
+  padding: 100px 300px;
+  text-align: center;
+  font-family: Futura;
+  font-size: 30px;
+  color: #ff6a00;
+}
+
+.konntakuto p a {
+  color: #fff;
+}
+
+/* ================================
+   FOOTER
+================================ */
+footer {
+  background: #1e00ff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 63px;
+  padding: 50px 300px;
+  text-align: center;
+  font-family: Futura;
+  font-size: 20px;
+  color: #ff6a00;
+}
+
+/* ================================
+   レスポンシブ対応
+================================ */
+@media (max-width: 768px) {
+  .ppp {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .ppp {
+    grid-template-columns: 1fr;
+  }
+}
